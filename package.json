@@ -1,0 +1,35 @@
+{
+  "name": "vhall-cms",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-documentation": "4.0.0",
+    "@strapi/plugin-i18n": "4.0.0",
+    "@strapi/plugin-users-permissions": "4.0.0",
+    "@strapi/strapi": "4.0.0",
+    "pg": "^8.7.1",
+    "pg-connection-string": "^2.5.0",
+    "sqlite3": "5.0.2"
+  },
+  "author": {
+    "name": "Bharath",
+    "email": "bharathmsd7@outlook.com",
+    "url": "bharathmsd7.github.io",
+    "username": "bharathmsd7"
+  },
+  "strapi": {
+    "uuid": "7958f88e-ea89-4e00-b105-bb4c1d44748c"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

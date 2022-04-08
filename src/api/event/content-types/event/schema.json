@@ -1,0 +1,104 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "BrideName": {
+      "type": "string"
+    },
+    "GroomName": {
+      "type": "string"
+    },
+    "Studio": {
+      "type": "string"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "Time": {
+      "type": "time"
+    },
+    "BrideImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "GroomImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "EventType": {
+      "type": "enumeration",
+      "enum": [
+        "Wedding",
+        "Reception",
+        "WeddingAndReception",
+        "Birthday",
+        "Engagement"
+      ],
+      "required": true
+    },
+    "InvitationImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "StudioImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "Slug": {
+      "type": "uid",
+      "required": true,
+      "minLength": 5
+    },
+    "streamUrl": {
+      "type": "string"
+    },
+    "youtubeUrl": {
+      "type": "string"
+    },
+    "EventStatus": {
+      "type": "enumeration",
+      "enum": [
+        "yettostart",
+        "started",
+        "ended",
+        "uploaded"
+      ],
+      "required": true,
+      "default": "yettostart"
+    }
+  }
+}
